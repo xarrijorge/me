@@ -70,6 +70,7 @@ h6,
 header {
   font-family: 'GrandSlang Roman';
   font-weight: 100;
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -91,39 +92,68 @@ a {
   flex-direction: column;
 }
 
-.description {
-  display: flex;
-}
 /* Home page styles start here ////////////////// */
 .main section {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 250px);
   gap: 0;
-}
-.main section {
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
   transform: rotate(45deg);
+  margin-bottom: -50px;
 }
 .main div {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 0;
 }
+
 .main .first {
-  border-right: 2px solid var(--divider-color);
-  border-bottom: 2px solid var(--divider-color);
+  border-right: 3px solid var(--divider-color);
+  border-bottom: 3px solid var(--divider-color);
+  color: var(--burgundy);
 }
 .main .second {
-  border-left: 2px solid var(--divider-color);
-  border-bottom: 2px solid var(--divider-color);
+  border-left: 3px solid var(--divider-color);
+  border-bottom: 3px solid var(--divider-color);
+  color: var(--teal);
 }
 .main .third {
-  border-right: 2px solid var(--divider-color);
-  border-top: 2px solid var(--divider-color);
+  border-right: 3px solid var(--divider-color);
+  border-top: 3px solid var(--divider-color);
+  color: var(--burgundy);
 }
 .main .fourth {
-  border-left: 2px solid var(--divider-color);
-  border-top: 2px solid var(--divider-color);
+  border-left: 3px solid var(--divider-color);
+  border-top: 3px solid var(--divider-color);
+  color: var(--teal);
+}
+.first,
+.second,
+.third,
+.fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  transform: rotate(-45deg);
+  font-size: 1.3rem;
+  font-family: 'Runalto';
+}
+.first:hover,
+.second:hover,
+.third:hover {
+  border: 1px solid var(--accent-color);
+}
+.main footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 /* About Page Styles start here ////////////////////// */
