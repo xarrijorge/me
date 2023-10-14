@@ -1,36 +1,36 @@
 @font-face {
-    font-family: 'GrandSlang Roman';
-    src: url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.eot'),
-        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff2') format('woff2'),
-        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff') format('woff'),
-        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.ttf') format('truetype'),
-        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.svg#GrandSlang Roman')
-            format('svg');
+  font-family: 'GrandSlang Roman';
+  src: url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.eot'),
+    url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff2') format('woff2'),
+    url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff') format('woff'),
+    url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.ttf') format('truetype'),
+    url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.svg#GrandSlang Roman')
+      format('svg');
 }
 
 @font-face {
-    font-family: 'Runalto';
-    src: url('./fonts/Runalto.otf'), url('./fonts/Runalto.ttf'),
-        url('./fonts/Runalto.woff');
+  font-family: 'Runalto';
+  src: url('./fonts/Runalto.otf'), url('./fonts/Runalto.ttf'),
+    url('./fonts/Runalto.woff');
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
 @font-face {
-    font-family: 'droid-serif';
-    src: url('droid-Serif.woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'droid-serif';
+  src: url('droid-Serif.woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'droid-sans-mono';
-    src: url('droid-sans-mono.woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'droid-sans-mono';
+  src: url('droid-sans-mono.woff');
+  font-weight: normal;
+  font-style: normal;
 }
 :root {
   --subText: #f3d4e5;
@@ -38,7 +38,7 @@
   --primary-color: #009688;
   --primary-color-light: #b2dfdb;
   --primary-color-text: #ffffff;
-  --accent-color: #ff4081;
+  --accent-color: #fda7df;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --divider-color: #bdbdbd;
@@ -51,84 +51,154 @@
   --teal-dark: #004e4e;
   --color-shadow: #00000026;
 }
-body{
-    background-color: var(--dark-color);
-    font-family: 'Montserrat';
-    color: var(--burgundy-light);
-    font-weight: 300;
+html * {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--dark-color);
+  font-family: 'Montserrat';
+  color: var(--burgundy-light);
+  font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, header{
-    font-family: 'GrandSlang Roman'; 
-    font-weight: 100;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+  font-family: 'GrandSlang Roman';
+  font-weight: 100;
 }
-a{
-    text-decoration: none;
-    color: var(--burgundy-light)
-}
-
-.navigation{
-    height: 10vh;
-    display: flex;;
-    align-items: center;
-}
-
-
-.main{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+a {
+  text-decoration: none;
+  color: var(--burgundy-light);
 }
 
-.description{
-    display: flex;
+.navigation {
+  height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description {
+  display: flex;
+}
 
 /* About Page Styles start here ////////////////////// */
 
-.aboutContainer{
-    width: 50vw;
-    margin: 0 auto;
+.aboutContainer {
+  width: 50vw;
+  margin: 0 auto;
 }
-.aboutHeader{
-    margin: 20px 0;
+.aboutHeader {
+  margin: 20px 0;
 }
-.aboutHeader *{
-    margin: 0;
-    letter-spacing: 3px;
-    line-height: 1.5em;
-}
-
-.aboutHeader h1{
-    font-size: 4em;
-}
-.aboutHeader h2{
-    font-size: 2em;
+.aboutHeader * {
+  margin: 0;
+  letter-spacing: 3px;
+  line-height: 1.5em;
 }
 
-.aboutMain{
-    font-weight: 100;
-    line-height: 2;
-    font-size: 1.2em;
-    text-align: justify;
+.aboutHeader h1 {
+  font-size: 4em;
 }
-.aboutfooter{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.aboutfooter > *{
-    width: 50%;
-    height: 20vh;
-}
-.aboutfooter .follow section{
-    display: flex;
-    line-height: 1.5;
-    flex-direction: column;
+.aboutHeader h2 {
+  font-size: 2em;
 }
 
-Contact Page Styles Start here
+.aboutMain {
+  font-weight: 100;
+  line-height: 2;
+  font-size: 1.2em;
+  text-align: justify;
+}
+.aboutfooter {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.aboutfooter > * {
+  width: 50%;
+  height: 20vh;
+}
+.aboutfooter .follow section {
+  display: flex;
+  line-height: 1.5;
+  flex-direction: column;
+}
+
+/* Contact Page Styles Start here */
+.contactPage {
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.contactPage .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  padding-left: 100px;
+  font-size: 5em;
+  border: 1px solid thistle;
+}
+.contactPage .right {
+  width: 60%;
+}
+.contactPage .left h1 {
+  margin: 0;
+}
+.contactPage .left h1:last-child {
+  color: var(--accent-color);
+}
+
+.contactPage .right {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid thistle;
+}
+
+.contactPage .right .text {
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.contactPage .right .text span {
+  border-bottom: 1px solid var(--accent-color);
+}
+.contactPage .right .iconBox {
+  display: flex;
+  font-size: 1em;
+}
+.contactPage .right .iconBox p {
+  margin: 0 10px;
+}
+.contactPage .right .iconBox img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contactPage .right .iconBox section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
