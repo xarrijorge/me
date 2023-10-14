@@ -94,6 +94,37 @@ a {
 .description {
   display: flex;
 }
+/* Home page styles start here ////////////////// */
+.main section {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 0;
+}
+.main section {
+  transform: rotate(45deg);
+}
+.main div {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+.main .first {
+  border-right: 2px solid var(--divider-color);
+  border-bottom: 2px solid var(--divider-color);
+}
+.main .second {
+  border-left: 2px solid var(--divider-color);
+  border-bottom: 2px solid var(--divider-color);
+}
+.main .third {
+  border-right: 2px solid var(--divider-color);
+  border-top: 2px solid var(--divider-color);
+}
+.main .fourth {
+  border-left: 2px solid var(--divider-color);
+  border-top: 2px solid var(--divider-color);
+}
 
 /* About Page Styles start here ////////////////////// */
 
