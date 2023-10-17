@@ -19,19 +19,6 @@
   src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
-@font-face {
-  font-family: 'droid-serif';
-  src: url('droid-Serif.woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'droid-sans-mono';
-  src: url('droid-sans-mono.woff');
-  font-weight: normal;
-  font-style: normal;
-}
 :root {
   --subText: #f3d4e5;
   --primary-color-dark: #00796b;
@@ -187,6 +174,7 @@ a {
 }
 .aboutHeader h2 {
   font-size: 2em;
+  color: var(--teal);
 }
 
 .aboutMain {
@@ -286,6 +274,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.workPage h1 {
+  margin: 100px 0;
 }
 .workPage .jobSection {
   width: 70vw;
