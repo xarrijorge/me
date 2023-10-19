@@ -217,6 +217,7 @@ a {
 /* Contact Page Styles Start here */
 .contactPage {
   display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   height: 90vh;
   width: 70%;
   justify-content: center;
@@ -399,5 +400,24 @@ a {
   }
   .aboutMain {
     font-size: 1em;
+  }
+
+  .contactPage {
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+  }
+  .contactPage .left,
+  .contactPage .right {
+    padding: 0 30px;
+    margin: 0;
+    width: auto;
+  }
+  .contactPage .left {
+  }
+  .contactPage .right .text {
+    text-align: center;
+    font-size: 1.3em;
   }
 }
