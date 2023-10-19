@@ -285,7 +285,7 @@ a {
 
 .workPage {
   margin: 0 auto;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   /* text-align: center; */
   display: flex;
   flex-direction: column;
@@ -387,6 +387,10 @@ a {
     text-align: right;
   }
 
+  .workPage .jobSection {
+    width: auto;
+  }
+
   .skills h1 {
     text-align: center;
     font-size: 1.3em;
@@ -413,8 +417,6 @@ a {
     padding: 0 30px;
     margin: 0;
     width: auto;
-  }
-  .contactPage .left {
   }
   .contactPage .right .text {
     text-align: center;
