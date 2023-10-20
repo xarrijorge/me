@@ -213,14 +213,6 @@ a {
   line-height: 1.5;
   flex-direction: column;
 }
-.follow a{
-  width: min-content;
-}
-.follow a:hover {
-  color: var(--accent-color);
-  border-bottom: 1px dashed var(--accent-color);
-  cursor: pointer;
-}
 
 /* Contact Page Styles Start here */
 .contactPage {
@@ -303,6 +295,7 @@ a {
 }
 .workPage h1 {
   margin-top: 50px;
+  color: var(--teal);
 }
 .workPage .jobSection {
   width: 70vw;
@@ -352,7 +345,7 @@ a {
 
 /* Media QUeries are below */
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   body {
     margin: 0;
     padding: 0;
@@ -397,6 +390,10 @@ a {
 
   .workPage .jobSection {
     width: auto;
+  }
+  .workPage h1 {
+    text-align: center;
+    font-size: 1.6em;
   }
 
   .skills h1 {
