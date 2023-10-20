@@ -213,6 +213,14 @@ a {
   line-height: 1.5;
   flex-direction: column;
 }
+.follow a{
+  width: min-content;
+}
+.follow a:hover {
+  color: var(--accent-color);
+  border-bottom: 1px dashed var(--accent-color);
+  cursor: pointer;
+}
 
 /* Contact Page Styles Start here */
 .contactPage {
