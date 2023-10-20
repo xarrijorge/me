@@ -213,6 +213,9 @@ a {
   line-height: 1.5;
   flex-direction: column;
 }
+.aboutfooter a:hover {
+  color: var(--accent-color);
+}
 
 /* Contact Page Styles Start here */
 .contactPage {
