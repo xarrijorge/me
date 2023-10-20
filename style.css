@@ -47,8 +47,6 @@ body {
   font-family: 'Montserrat';
   color: var(--burgundy-light);
   font-weight: 300;
-  /* max-width: 2080px; */
-  /* margin: 0 auto; */
 }
 
 h1,
@@ -117,15 +115,12 @@ a {
 }
 .first img {
   width: 150px;
-  aspect-ratio: 1/1;
   border-radius: 50%;
-  /* filter: grayscale(0.5); */
   transform: rotate(-45deg);
 }
 .main .second {
   border-left: 3px solid var(--divider-color);
   border-bottom: 3px solid var(--divider-color);
-  /* color: var(--primary-color); */
 }
 .main .third {
   border-right: 3px solid var(--divider-color);
@@ -153,7 +148,6 @@ a {
 .fourth:hover > h1 {
   width: auto;
   padding: 10px;
-  /* color: var(--burgundy-light); */
   color: var(--primary-color);
   font-size: 2em;
   transition: all 0.5s ease-in-out;
@@ -216,11 +210,13 @@ a {
 .aboutfooter a:hover {
   color: var(--accent-color);
 }
+.aboutMain .catch {
+  color: var(--accent-color);
+}
 
 /* Contact Page Styles Start here */
 .contactPage {
   display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   height: 90vh;
   width: 70%;
   justify-content: center;
@@ -288,8 +284,6 @@ a {
 
 .workPage {
   margin: 0 auto;
-  /* min-height: 90vh; */
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
