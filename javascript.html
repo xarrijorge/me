@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Queries</title>
+    <style>
+        body {
+            justify-content: center;
+            /* Horizontally center content */
+            align-items: center;
+            /* Vertically center content */
+        }
+
+        table {
+            width: 70%;
+            /* Center the table by setting a width and using margin auto */
+            margin: 0 auto;
+            border-collapse: collapse;
+            /* Remove default cell spacing */
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            /* Add borders to table cells */
+            text-align: center;
+            /* Center-align content within cells */
+            padding: 8px;
+            /* Add some padding for better readability */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* Gray background for table headers */
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center;"> Welcome Broomstick! You have some queries to review
+    <p>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student</th>
+                <th>Query</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="queryTableBody"></tbody>
+    </table>
+
+    <script>
+        const queries = [
+            { id: 1, student: "Genesis", query: "Permission to absent from tech class", status: "APPROVED" },
+            { id: 2, student: "Nunya", query: "Permission to Absa Hackathon", status: "APPROVED" },
+            { id: 3, student: "Fleeur", query: "Permission to shoot film", status: "DECLINED" },
+            { id: 4, student: "Delight", query: "Need some delightful time to cool off", status: "DECLINED" },
+            { id: 5, student: "Sila", query: "Permission to participate in Absa Hackathon", status: "PENDING" }
+        ];
+
+        const queryTableBody = document.getElementById("queryTableBody");
+
+        for (const queryItem of queries) {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${queryItem.id}</td>
+                <td>${queryItem.student}</td>
+                <td>${queryItem.query}</td>
+                <td>${queryItem.status}</td>
+                <td>
+                    <a href="#">Approve</a>
+                    <a href="#">Reject</a>
+                </td>
+            `;
+            queryTableBody.appendChild(row);
+        }
+    </script>
+</body>
+
+</html>
